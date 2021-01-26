@@ -31,7 +31,10 @@ Cache<R(Args...)> memoize(R (*f)(Args...))
     return Cache<R(Args...)>(std::function<R(Args...)>(f));
 }
 // End Wrapper
-
+/*
+References: 
+- https://stackoverflow.com/questions/30679445/python-like-c-decorators
+*/
 // Example
 int fib(int n)
 {
